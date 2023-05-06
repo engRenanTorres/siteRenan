@@ -110,25 +110,33 @@ ul {
 	background-color: #ddd;
 }
 
-.basic-info {
-	display: flex;
-	flex-direction: column;
+
+.academic p {
+  font-size: 14px;
+  padding: 6px 0px;
 }
 
 .aside-content {
-	font-size: 12px;
+  font-size: 12px;
 	padding-left: 12px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
 }
 .content {
 	padding: 0 12px;
 	margin-bottom: 10px;
 	text-align: justify;
 }
+
 .contact-img{
 	height: 12px;
 }
+
 .final{
 	display: flex;
   justify-content: space-between;
@@ -138,16 +146,21 @@ ul {
   font-size: 12px;
 }
 
+.footer {
+  align-items: end;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+}
+
 .main--content {
 	font-size: 14px;
 }
+
 .main--content div p {
 	margin: 6px 0;
 }
-.academic p {
-	font-size: 14px;
-  padding: 6px 0px;
-}
+
 .main--content__titulo, .academic-course {
 	font-weight: 900;
 }
@@ -174,7 +187,10 @@ ul {
 .url, .email {
 	display: block;
 }
-
+.port {
+  padding: 0;
+  margin:0;
+}
 .photo {
   align-self: center;
   border-bottom-left-radius: 50% 45%;
