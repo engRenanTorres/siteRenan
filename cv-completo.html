@@ -56,7 +56,7 @@
         </section>
       </div>
 			<section class="aside-content" id="keywords">
-				<p><label>Keywords</label>JavaScript, TypeScript, React.JS, React Native, NEST.js, GIT, JQuery, NoSQL, MySQL, MongoDB</p>
+				<p><label>Keywords</label>JavaScript, TypeScript, React.js, React Native, Nest.js, Testes Automatizados, Git, JQuery, NoSQL, MySQL, MongoDB, Java, Android...</p>
 			</section>
 		</aside>
 		<main>
@@ -99,12 +99,17 @@
 				<h3>Portifólio</h3>
 				<div class="main--content">
 					<div>
-						<p> <span class="main--content__titulo">Projeto Pessoal</span>: 
+						<p> <span class="main--content__titulo">Projeto Próprio</span>: 
 						<span class="main--content__empresa">Engenharia de Concursos</span></p>
 						<p class="main--content__data port"><label>Front-end Web</label><a href="#">Link aqui</a></p>
 						<p class="main--content__data port"><label>Back-end</label><a href="#">Link aqui</a></p>
-						<p class="main--content__data port"><label>Mobile</label>Em desenvolvimento</p>
-						<p class="main--content__descricao">Contrato freelancer prolongado como FullStack. Utiliza ferramentas como React Native, React.js, Java Android, Spring boot, JQuery, Ajax, Express, MySQL, HTML 5, CSS 3, GitHub, Testes automatizados e outras.</p>
+						<p class="main--content__data port"><label>Protótipo Mobile</label>SESMC disponível na PlayStore</p>
+						<p class="main--content__descricao"> Este é o primeiro app já feito para criar simulados gratuitos de concursos de Engenharia. 
+              O projeto se encontra em desenvolvimento com o objetivo de ajudar os engenheiros a estudarem para concursos públicos. 
+              O projeto já conta com protótipo base na PlayStore em que o aplicativonde já chegou à 600 usuários. 
+              No momento, o app geral visando abranger todas as engenharias está em fase de desenvolvimento. 
+              O sistema já conta com um Banco de Dados do MongoDB ligado pelo backend (Nest.js + Docker + AWS) a um frontend web(React.js + Vercel) 
+              onde são gerenciadas as questões e também tera a página de simulados na web futuramente. </p>
 					</div>
 				</div>
 			</section>
@@ -113,9 +118,11 @@
 				<div class="main--content">
 					<div>
 						<p> <span class="main--content__titulo">Full Stack developer</span> na
-            <span class="main--content__empresa">Maricá Teleom/OLS (Offshore Link Sat)</span></p>
+            <span class="main--content__empresa">Maricá Telecom/OLS (Offshore Link Sat)</span></p>
 						<p class="main--content__data">06/2022 - Atual</p>
-						<p class="main--content__descricao">Contrato freelancer prolongado como FullStack. Utiliza ferramentas como React Native, React.js, Java Android, Spring boot, JQuery, Ajax, Express, MySQL, HTML 5, CSS 3, GitHub, Testes automatizados e outras.</p>
+						<p class="main--content__descricao">Contrato freelancer prolongado como FullStack. 
+              Utiliza ferramentas como React Native, React.js, Java Android, Spring boot, JQuery, Ajax, Express, MySQL, 
+              HTML 5, CSS 3, Kanban, Ágile, DevOps, GitHub e outras.</p>
 					</div>
 				</div>
 				<div class="main--content">
@@ -123,15 +130,22 @@
 						<p> <span class="main--content__titulo">Full Stack developer</span> na
 						<span class="main--content__empresa">Free-lancer</span></p>
 						<p class="main--content__data">01/2022 - Atual</p>
-						<p class="main--content__descricao">Desenvolvedor freelancer em diversos projetos de softwares. Atua desenvolvendo projetos em empresas como Instituto Handsfree, Neomed e outras. Além disso é criador e desenvolvedor de apps próprios já lançados na Google Play Store. Trabalha com metodologias Ágeis (Scrum) e utilizando tecnologias como React.js, React Native, Node.js, Context API, Firebase, NoSQL, Git e outras.</p>
+						<p class="main--content__descricao">Desenvolvedor freelancer em diversos projetos de softwares. 
+              Atua desenvolvendo projetos em empresas como Instituto Handsfree, Neomed e outras. 
+              Além disso é criador e desenvolvedor de apps próprios já lançados na Google Play Store. 
+              Trabalha com metodologias Ágeis (Scrum) e utilizando tecnologias como 
+              React.js, React Native, Node.js, Nest.js, Testes automatizados, NoSQL, Git, Springboot e outras.</p>
 					</div>
 				</div>
 				<div class="main--content">
 					<div>
 						<p> <span class="main--content__titulo">Engenheiro Civil e de Segurança</span> em
-						<span class="main--content__empresa">Diversos locais</span></p>
+						<span class="main--content__empresa">Diversos empresas</span></p>
 						<p class="main--content__data"><label>Período</label>2012 - 06/2022</p>
-						<p class="main--content__descricao"> Atuou em diversas empresas desde nacionais a multinacionais, públicas e privadas. Tendo inclusive sendo aprovado em Primeiro lugar de concurso público, atuado com equipes internacionais e comandando equipes extremamente multidisciplinares. Possui no currículo empresas como Relyon Nutec, Efm América latina, Fundação Saúde do Estado do RJ, Perito do Tribunal Regional do Trabalho entre outras.</p>
+						<p class="main--content__descricao"> Atuou em diversas empresas desde nacionais a multinacionais, públicas e privadas. 
+              Já foi aprovado em Primeiro lugar de concurso público, atuou com equipes internacionais e liderando equipes extremamente multidisciplinares. 
+              Possui no currículo empresas como Relyon Nutec, EFM América latina, Fundação Saúde do Estado do RJ, 
+              Perito Judicial do Tribunal Regional do Trabalho entre outras.</p>
 					</div>
 				</div>
 			</section>
@@ -169,14 +183,34 @@
 		</main>
 		
 		<footer class="footer">
-        <p>*CV desenvolvido em HTML e CSS por Renan Torres</p>
+        <p>*CV desenvolvido em HTML e CSS por Renan Torres&#169</p>
 				<!--Inserir copyright renan -->
 				<p>Atualizado em <span id="footer__data-atual">06 de maio de 2023</p>
 		</footer>		
 	</body>
+
   <script>
-    /*const data = document.querySelector('#footer__data-atual');
-    data.innerHTML = "OI"*/
+    const data = document.querySelector('#footer__data-atual');
+    const today = new Date();
+    const day = today.getDay();
+    const month = today.getMonth();
+    const year = today.getFullYear();
+    data.innerHTML = day + " de " + monthNameBr(month) + " de "+ year;
+
+    function monthNameBr(month) {
+      if(month === 0) return "Janeiro";
+      if(month === 1) return "Fevereiro";
+      if(month === 2) return "Março";
+      if(month === 3) return "Abril";
+      if(month === 4) return "Maio";
+      if(month === 5) return "Junho";
+      if(month === 6) return "Julho";
+      if(month === 7) return "Agosto";
+      if(month === 8) return "Setembro";
+      if(month === 9) return "Outubro";
+      if(month === 10) return "Novembro";
+      if(month === 11) return "Dezembro";
+    }
   </script>
 
 </html>
